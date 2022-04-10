@@ -1,10 +1,12 @@
 ---
 title: Launch X Bitácora de viaje
-description: The hallway smelt of boiled cabbage and old rag mats.
+description: Learning abut backend
 ---
 
-Hola ✌️  soy el explorer **___** y este es mi blog personal donde compartiré mis aventuras de Launch X.
+Hello ✌️  I'm glad that you're here, I'm  **Gabriel Aldair Villagrán Saucedo** In this blog, you will find all about my journey learning about backend with the help of my Mission Commander, the one and only **Carlo Gilmar**.
 
-Te invito a conocer mis aprendizajes y leer mis experiencias.
+On my github profile you can see some of the works that I have done across my learning path (courses, college, personal projects, etc...) feel free to use it if you want it.
 
-🚀
+I'm passionate about IT and cybersecurity but to be honest I love to learn new things :)
+
+"Al espacio y mucho, pero mucho... más allá" 🚀

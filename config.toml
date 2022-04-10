@@ -1,6 +1,6 @@
-baseURL = "https://example.com"
+baseURL = "https://gabrielvillagran.github.io/my_launchx_blog/"
 languageCode = "en-us"
-title = "Bitácora de Viaje"
+title = "Bitácora de Explorer: Gabriel Villagran"
 theme = "hugo-winston-theme"
 relativeURLs = true
 canonifyURLs = true
@@ -11,9 +11,9 @@ pygmentsUseClasses = true
 paginate = 3
 
 [params]
-  google_analytics_id = ""
+  google_analytics_id = "UA-225486122-1"
   # Hey Explorer aquí pon tu twitter 👇
-  twitter_handle = "@visual_partner"
+  twitter_handle = "@Gabriel29A6"
   showAuthorOnHomepage = true
   showAuthorOnPosts = false
   showPostsOnHomepage = false

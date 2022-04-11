@@ -2,20 +2,18 @@
 title: 'About me'
 menu:
   main:
-    name: "AboutMe"
+    name: "About Me"
 ---
 
-## Who am I
+## Gabriel Aldair Villagrán Saucedo
 
-Hola, aquí vas a leer un poco sobre mi 🤩
+Permiteme platicarte un poco sobre mi 🤩
 
-> Excidit gente, si orat suo quaeque dura Calydon nata? Pars auro post stetit
-> adfusique imis amplexus. Agmina per fabricator
-> mittere Erymanthon habetque tot.
+Soy Tamaulipeco de corazón y estudiante de la licenciatura de **Ing. Sistemas Inteligentes** en la Facultad de ingeniería de la **Universidad Autónoma de San Luis Potosí**, me gusta estudiar cosas relacionadas a ciberseguridad, redes, hacking y en mis tiempos libres suelo hacer algunos retos CTF, pero no solo hago eso...:
+> Juego videojuegos de cualquier tipo ;) agregame a Steam: meandthatman, LOL: Atlas90
+> Me gusta tocar guitarra
+> Aprender sobre IA 
+> Salir a pasear y disfrutar de lo que nos rodea... De eso se trata vivir no?
 
-**Cineres Nile ipsa** origine discurrunt adest Unde, et quem clausus, imo,
-virens quoque tales, potuit. Ingentes insilit corpore nutricis praebebat roganti
-licuit. Denique a vestros adulantum in bella lina parte et arte generi di igitur
-quis, digitis pedes. Cum resonant tamen, namque in anxia. Non nostri trahens
-ancora.
+Gracias por estar aquí :)
 

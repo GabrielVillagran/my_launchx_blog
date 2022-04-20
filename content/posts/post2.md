@@ -1,7 +1,7 @@
 ---
 title: "Git & Github"
 date: 2022-04-10
-description: 'Descripción de tu blog post'
+description: 'superduper and useful tools'
 ---
 **Git and Github**
 

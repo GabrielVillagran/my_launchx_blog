@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Unit Test with Jest - Bitácora de Explorer: Gabriel Villagran</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="https://gabrielvillagran.github.io/my_launchx_blog/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="../../css/style.min.4f4767d518839223786999cdb69fc7a63791220ecccd236bc732a5f998aaee2d.css">
+  
+
+  
+    <meta name="description" content="A quick tutorial about unit testing using jest on Node JS"/>
+    <meta property="og:title" content="Unit Test with Jest"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://gabrielvillagran.github.io/my_launchx_blog/posts/post4/"/>
+    
+    <meta property="og:description" content="A quick tutorial about unit testing using jest on Node JS"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@Gabriel29A6"/>
+    <meta name="twitter:creator" content="@Gabriel29A6"/>
+  
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+
+
+
+
+<body class='page frame page-blog-single'>
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <a class="header-logo" href="https://gabrielvillagran.github.io/my_launchx_blog/">Bitácora de Explorer: Gabriel Villagran</a>
+  <div class="menu-main">
+    <ul>
+        
+        
+            <li class="menu-item-about me">
+                <a href="../../pages/about/">About Me</a>
+            </li>
+        
+            <li class="menu-item-posts">
+                <a href="../../posts/">Posts</a>
+            </li>
+        
+    </ul>
+  </div>
+</div>
+    
+  <div class="blog">
+    
+    <div class="intro">
+      <h1>Unit Test with Jest<span class="dot">.</span></h1>
+      
+    </div>
+    <div class="content">
+      <p><strong>What is Unit Testing?</strong></p>
+<p>Before I started to show you how to do this testing, let me talk about what is this and why is important to implement this tests to our projects.</p>
+<p>Unit testing is a very useful technique that will help you to develop an application fully functional, <strong>Important: If you see a project without testing, be careful, all the projects must have tests and this one should fail</strong>.</p>
+<p>Unit tests are developed using a framework or library where we will develop the tests that should fail and/or pass and we will develop the code for this test.</p>
+<p><strong>How to develop our unit tests using Jest</strong></p>
+<p>Jest is a framework for unit testing in JavaScript, this is a step-by-step guide to develop those tests:</p>
+<ol>
+<li>Create a directory where your project will be contained, for example, <strong>Ajolonauta</strong></li>
+<li>Using your terminal go to the directory using cd, for example, <strong>cd Ajolonauta</strong>, once you are there use the next command, <strong>npm init</strong>.
+<strong>Note: This command will show you some questions for the creation of the project, you can press enter to accept the default values</strong></li>
+<li>Execute the command <strong>npm install &ndash;save-dev jest</strong> to install the Jest package into the newly created project,</li>
+<li>When we run the command to install Jest packages we are going to have a package.json file that needs to be updated, on script  section we should changed to something like this:</li>
+</ol>
+<p><img src="https://user-images.githubusercontent.com/44887537/164289853-ac56314b-eaa0-4861-b545-6d1a9470b8ef.png" alt="image"></p>
+<p><strong>Final package.json</strong></p>
+<p><img src="https://user-images.githubusercontent.com/44887537/164289919-71291665-ee68-41b9-8125-2f9b0928ee14.png" alt="image"></p>
+<p>**Note: The directory node_modules mustn&rsquo;t have to be versioned, we have to create a .gitignore file on the root directory with the next line: **</p>
+<p><img src="https://user-images.githubusercontent.com/44887537/164290294-55f5bbb7-3e45-4a9a-af9e-c78c5bb2579b.png" alt="image"></p>
+<p><strong>Writing your first test</strong></p>
+<p>This is a basic test that can be found on the documentation of jest, you can modify for the purpose that you want it:</p>
+<p>1-. Create a directory with the name test (here you will code all your tests)
+2-. Create a file &ldquo;myFirstTest.test.js&rdquo; and write the next sample code:</p>
+<p><img src="https://user-images.githubusercontent.com/44887537/164306509-15f1a735-cca9-45df-879b-049faca088cb.png" alt="image"></p>
+<p><strong>Run your test</strong></p>
+<p>To run your test is very simple, on your terminal execute: <strong>npm run test</strong> and this will execute all your tests and will show you if the test was pass or fail.</p>
+
+    </div>
+  </div>
+
+    <div class="footer">
+  
+  <div class="footer-social">
+    
+      <span class="social-icon social-icon-twitter">
+        <a href="https://twitter.com/Gabriel29A6" title="twitter" target="_blank" rel="noopener">
+          <img src="../../images/social/twitter.svg" width="24" height="24" alt="twitter"/>
+        </a>
+      </span>
+    
+      <span class="social-icon social-icon-github">
+        <a href="https://github.com/GabrielVillagran" title="github" target="_blank" rel="noopener">
+          <img src="../../images/social/github.svg" width="24" height="24" alt="github"/>
+        </a>
+      </span>
+    
+  </div>
+  
+</div>
+  </div>
+
+  
+
+  
+
+  
+  <script type="text/javascript" src="../../js/bundle.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js"></script>
+  
+
+  
+  
+
+  
+  
+  
+    
+      
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-225486122-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-225486122-1');
+      </script>
+    
+  
+
+
+</body>
+</html>

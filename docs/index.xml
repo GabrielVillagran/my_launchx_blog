@@ -6,7 +6,18 @@
     <description>Recent content in Launch X Bitácora de viaje on Bitácora de Explorer: Gabriel Villagran</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://gabrielvillagran.github.io/my_launchx_blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 Apr 2022 12:00:21 -0400</lastBuildDate><atom:link href="https://gabrielvillagran.github.io/my_launchx_blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Unit Test with Jest</title>
+      <link>https://gabrielvillagran.github.io/my_launchx_blog/posts/post4/</link>
+      <pubDate>Wed, 20 Apr 2022 12:00:21 -0400</pubDate>
+      
+      <guid>https://gabrielvillagran.github.io/my_launchx_blog/posts/post4/</guid>
+      <description>What is Unit Testing?
+Before I started to show you how to do this testing, let me talk about what is this and why is important to implement this tests to our projects.
+Unit testing is a very useful technique that will help you to develop an application fully functional, Important: If you see a project without testing, be careful, all the projects must have tests and this one should fail.</description>
+    </item>
+    
     <item>
       <title>Git &amp; Github</title>
       <link>https://gabrielvillagran.github.io/my_launchx_blog/posts/post2/</link>

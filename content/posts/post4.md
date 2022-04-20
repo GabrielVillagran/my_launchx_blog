@@ -20,9 +20,11 @@ Jest is a framework for unit testing in JavaScript, this is a step-by-step guide
 **Note: This command will show you some questions for the creation of the project, you can press enter to accept the default values**
 3. Execute the command **npm install --save-dev jest** to install the Jest package into the newly created project,
 4. When we run the command to install Jest packages we are going to have a package.json file that needs to be updated, on script  section we should changed to something like this:
+
 ![image](https://user-images.githubusercontent.com/44887537/164289853-ac56314b-eaa0-4861-b545-6d1a9470b8ef.png)
 
 **Final package.json**
+
 ![image](https://user-images.githubusercontent.com/44887537/164289919-71291665-ee68-41b9-8125-2f9b0928ee14.png)
 
 

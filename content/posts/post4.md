@@ -1,7 +1,7 @@
 ---
 title: "Unit Test with Jest"
 date: 2022-04-20T18:16:21-06:00
-description: 'A quick tutorial about unit testing using jest on NodeJS'
+description: 'A quick tutorial about unit testing using jest on Node JS'
 ---
 **What is Unit Testing?**
 

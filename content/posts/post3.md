@@ -1,6 +1,6 @@
 ---
 title: "NS3-AI"
-date: 2022-04-20T18:16:21-07:00
+date: 2022-04-20T13:13:21-06:00
 description: 'Computer networking and DL/RL algorithms'
 ---
 **Introduction**

@@ -7,16 +7,19 @@ menu:
 
 ## Gabriel Aldair Villagrán Saucedo
 
-Permiteme platicarte un poco sobre mi 🤩
+Let me introduce myself 🤩
 
-Soy Tamaulipeco de corazón y estudiante de la licenciatura de **Ing. Sistemas Inteligentes** en la Facultad de ingeniería de la **Universidad Autónoma de San Luis Potosí**, me gusta estudiar cosas relacionadas a ciberseguridad, redes, hacking y en mis tiempos libres suelo hacer algunos retos CTF, pero no solo hago eso...:
-- Juego videojuegos de cualquier tipo ;) agregame a Steam: meandthatman, LOL: Atlas90
+I'm from Ciudad Victoria, Tamaulipas and I'm studying my last year in **systems engineering at engineer faculty in Universidad Autónoma de San Luis Potosí**, I like to study things related to cybersecurity, AI, computer networking  and on my free time I usually do some CTF challenges.
 
-- Me gusta tocar guitarra
- 
-- Aprender sobre IA 
- 
-- Salir a pasear y disfrutar de lo que nos rodea... De eso se trata vivir no?
+My hobbies are play guitar, bass, play videogames and go out with my friends and family.
 
-Gracias por estar aquí :)
+- SteamID: meandthatman
+
+- LOL: Atlas90
+
+- Epic: CausableMass4
+
+- Xbox: MeAndThatMan
+
+Heey!!! Thanks for being here :)
 

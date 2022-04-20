@@ -1,8 +1,9 @@
 ---
 title: "Git & Github"
 date: 2022-04-10
-description: 'superduper and useful tools'
+description: 'You need to learn this useful tools'
 ---
+
 **Git and Github**
 
 Git and github are not the same, they are different things and are very useful if you are a developer, this useful tools are distributed version control tool that will help you to have your project safe, updated and if you are working in team this will help all the people in your team to collaborate and work very fast in the project.
@@ -22,4 +23,4 @@ This videos are from Innovaccion Virtual (LaunchX), they are in spanish and will
 If you are reading this let me give you some advices:
 - **Get familiar with git and github**
 - **You need to learn your operating system and your text editor**
-- **Never stop learning :)***
+- **Never stop learning :)**

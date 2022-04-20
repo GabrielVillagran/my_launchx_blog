@@ -39,11 +39,7 @@ This is a basic test that can be found on the documentation of jest, you can mod
 1-. Create a directory with the name test (here you will code all your tests)
 2-. Create a file "myFirstTest.test.js" and write the next sample code:
 
-describe("Calculator tests", () => {
- test('adding 1 + 2 should return 3', () => {
-   expect(mathOperations.sum(1, 2)).toBe(3);
- });
-})
+![image](https://user-images.githubusercontent.com/44887537/164306509-15f1a735-cca9-45df-879b-049faca088cb.png)
 
 **Run your test**
 

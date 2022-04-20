@@ -19,5 +19,5 @@ The simulator provides us with environments for testing AI algorithms on most of
 
 ![image](https://user-images.githubusercontent.com/44887537/164278500-1369880d-501c-4d0e-8d9e-1463a77b2e39.png)
 
-Figure 2 give us a brief information about the  network layers based on OSI model, you can find more information about the OSI model (Network layers) on this link
+This image give us a brief information about the  network layers based on OSI model, you can find more information about the OSI model (Network layers) on this link
 OSI Model Reference Chart (cisco.com)

@@ -24,7 +24,7 @@ This project is being worked on by Jose Saul Castillo Ipiña and Gabriel Aldair 
       
       <guid>https://gabrielvillagran.github.io/my_launchx_blog/posts/post4/</guid>
       <description>What is Unit Testing?
-Gabriel Villagran -a267572@a;umnos.uaslp.mx-
+Gabriel Villagran -a267572@alumnos.uaslp.mx-
 Before I started to show you how to do this, let me talk about what is this and why is important to implement this tests to our projects.
 Unit testing is a very useful technique that will help you to develop an application fully functional, Important: If you see a project without testing, be careful, all the projects must have tests and this one should fail and need to be passed.</description>
     </item>

@@ -60,8 +60,9 @@
     </div>
     <div class="content">
       <p><strong>What is Unit Testing?</strong></p>
-<p>Before I started to show you how to do this testing, let me talk about what is this and why is important to implement this tests to our projects.</p>
-<p>Unit testing is a very useful technique that will help you to develop an application fully functional, <strong>Important: If you see a project without testing, be careful, all the projects must have tests and this one should fail</strong>.</p>
+<p>Gabriel Villagran -a267572@a;umnos.uaslp.mx-</p>
+<p>Before I started to show you how to do this, let me talk about what is this and why is important to implement this tests to our projects.</p>
+<p>Unit testing is a very useful technique that will help you to develop an application fully functional, <strong>Important: If you see a project without testing, be careful, all the projects must have tests and this one should fail and need to be passed</strong>.</p>
 <p>Unit tests are developed using a framework or library where we will develop the tests that should fail and/or pass and we will develop the code for this test.</p>
 <p><strong>How to develop our unit tests using Jest</strong></p>
 <p>Jest is a framework for unit testing in JavaScript, this is a step-by-step guide to develop those tests:</p>
@@ -70,11 +71,14 @@
 <p>Create a directory where your project will be contained, for example, <strong>Ajolonauta</strong></p>
 </li>
 <li>
-<p>Using your terminal go to the directory using cd, for example, <strong>cd Ajolonauta</strong>, once you are there use the next command, <strong>npm init</strong>.
-<strong>Note: This command will show you some questions for the creation of the project, you can press enter to accept the default values</strong></p>
+<p>Using your terminal go to the directory using cd, for example, <strong>cd Ajolonauta</strong>, once you are there, use the next command:</p>
 </li>
+</ol>
+<p><strong>npm init</strong>.</p>
+<p><strong>Note: This command will show you some questions for the creation of the project, you can press enter to accept the default values</strong></p>
+<ol start="3">
 <li>
-<p>Execute the command <strong>npm install &ndash;save-dev jest</strong> to install the Jest package into the newly created project.</p>
+<p>Execute the command npm install &ndash;save-dev jest to install the Jest package into the newly created project.</p>
 </li>
 <li>
 <p>When we run the command to install Jest packages we are going to have a package.json file that needs to be updated, on script  section we should changed to something like this:</p>
@@ -92,6 +96,8 @@
 <p><img src="https://user-images.githubusercontent.com/44887537/164306509-15f1a735-cca9-45df-879b-049faca088cb.png" alt="image"></p>
 <p><strong>Run your test</strong></p>
 <p>To run your test is very simple, on your terminal execute: <strong>npm run test</strong> and this will execute all your tests and will show you if the test was pass or fail.</p>
+<p><strong>Once you have run the test, you need to refactor the code you wrote and you need to make that your tests pass</strong></p>
+<p><strong>The tests of your project are a very important part of it, with them, you can change your code very easily, you will guarantee that your code will work, we do a better design and you can detect errors on an early stage</strong></p>
 
     </div>
   </div>

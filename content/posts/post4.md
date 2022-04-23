@@ -5,7 +5,7 @@ description: 'A quick tutorial about unit testing using jest on Node JS'
 ---
 **What is Unit Testing?**
 
-Gabriel Villagran -a267572@a;umnos.uaslp.mx-
+Gabriel Villagran -a267572@alumnos.uaslp.mx-
 
 Before I started to show you how to do this, let me talk about what is this and why is important to implement this tests to our projects.
 
@@ -54,6 +54,6 @@ This is a basic test that can be found on the documentation of jest, you can mod
 
 To run your test is very simple, on your terminal execute: **npm run test** and this will execute all your tests and will show you if the test was pass or fail.
 
-**Once you have run the test, you need to refactor the code you wrote and you need to make that your tests pass**
+**Once you have run your tests, what you need to do now is to refactor your code and once again you need to be sure that your tests fail and pass**
 
 **The tests of your project are a very important part of it, with them, you can change your code very easily, you will guarantee that your code will work, we do a better design and you can detect errors on an early stage**

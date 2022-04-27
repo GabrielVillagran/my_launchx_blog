@@ -8,6 +8,18 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 20 Apr 2022 13:13:21 -0600</lastBuildDate><atom:link href="https://gabrielvillagran.github.io/my_launchx_blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>TCP Protocol and congestion control</title>
+      <link>https://gabrielvillagran.github.io/my_launchx_blog/post5/</link>
+      <pubDate>Wed, 27 Apr 2022 12:00:21 -0400</pubDate>
+      
+      <guid>https://gabrielvillagran.github.io/my_launchx_blog/post5/</guid>
+      <description>ns3-ai Computer Networking A top-Down Approach sicth edition, Kurose and Ross Transport Layer The internet&amp;rsquo;s transport layer transports application-layer messages between application endpoints. There are two transport protocols
+ TCP UDP  For the study case of the example I will be focus mainly on TCP protocol.
+  Reliable Data Transfer: Is when the protocol provides a guranteed data delivery service
+  Loss-Tolerant Application: When a transport layer protocol doesn&amp;rsquo;t provide reliable data trasnfer, some of the data sent by the sending process may never arrive at the receiving process.</description>
+    </item>
+    
+    <item>
       <title>NS3-AI</title>
       <link>https://gabrielvillagran.github.io/my_launchx_blog/posts/post3/</link>
       <pubDate>Wed, 20 Apr 2022 13:13:21 -0600</pubDate>

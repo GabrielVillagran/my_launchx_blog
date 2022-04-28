@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Untitled - Bitácora de Explorer: Gabriel Villagran</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="https://gabrielvillagran.github.io/my_launchx_blog/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="../../css/style.min.4f4767d518839223786999cdb69fc7a63791220ecccd236bc732a5f998aaee2d.css">
+  
+
+  
+    
+    <meta property="og:title" content="Untitled"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://gabrielvillagran.github.io/my_launchx_blog/posts/gitandgithub/"/>
+    
+    
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@Gabriel29A6"/>
+    <meta name="twitter:creator" content="@Gabriel29A6"/>
+  
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+
+
+
+
+<body class='page frame page-blog-single'>
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <a class="header-logo" href="https://gabrielvillagran.github.io/my_launchx_blog/">Bitácora de Explorer: Gabriel Villagran</a>
+  <div class="menu-main">
+    <ul>
+        
+        
+            <li class="menu-item-about me">
+                <a href="../../pages/about/">About Me</a>
+            </li>
+        
+            <li class="menu-item-posts">
+                <a href="../../posts/">Posts</a>
+            </li>
+        
+    </ul>
+  </div>
+</div>
+    
+  <div class="blog">
+    
+    <div class="intro">
+      <h1>Untitled<span class="dot">.</span></h1>
+      
+    </div>
+    <div class="content">
+      <hr>
+<h2 id="description-tutorial-basico-para-el-uso-de-estas-dos-herramientas">title: &ldquo;Git &amp; GitHub&rdquo;
+date: 2022-04-28T12:00:21-04:00
+description: &lsquo;Tutorial basico para el uso de estas dos herramientas&rsquo;</h2>
+<p>Gabriel Villagrán
+a267572&quot;alumnos.uaslp.mx</p>
+<h1 id="debes-tener-instalado-git-en-tu-computadora-lo-puedes-encontrar-en-el-siguiente-enlace-httpsgit-scmcomdownloads">Debes tener instalado git en tu computadora, lo puedes encontrar en el siguiente enlace: <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></h1>
+<h2 id="creación-de-repositorios-en-github">Creación de repositorios en github</h2>
+<p>Para poder crear un repositorio de github es necesario crear una cuenta en <a href="https://github.com/">https://github.com/</a> una vez que cuentes con tu cuenta podrás hacer forks, hacer repositorios y utilizar todas las herramientas que github tiene para ti.</p>
+<p><strong>Para realizar la creación de un repositorio hay que hacer lo siguiente:</strong></p>
+<ol>
+<li>Selecciona <strong>&ldquo;Repositories&rdquo;</strong> y da clic en <strong>new</strong>
+<img src="@attachment/Clipboard_2022-04-27-23-27-41.png" alt=""></li>
+<li>Al momento de crear el repositorio te pedirá información como título y descripción, aunque la descripción es opcional, es necesario hacerlo para que las personas sepan una pequeña información de lo que se incluye dentro de el 
+<img src="@attachment/Clipboard_2022-04-27-23-31-38.png" alt=""></li>
+<li>Selecciona si tu repositorio sera publico o privado</li>
+<li>Para este ejemplo no sera necesario crear un archivo readme.md ya que lo crearemos desde nuestro editor de texto</li>
+<li>Presiona en el boton verde que dice <strong>Create Repository</strong></li>
+</ol>
+<p><strong>Utiliza VS Code para poder crear los archivos necesarios y hacer tu primer commit y push a github:</strong></p>
+<ol>
+<li>Abre el directorio que deseas versionar <strong>(subir a github)</strong> en tu editor de textos, en mi caso es el directorio js con un archivo <strong>func.js</strong>
+<img src="@attachment/Clipboard_2022-04-27-23-35-23.png" alt=""></li>
+<li>Crea un archivo con el nombre readme.md (Este archivo debe estar en la carpeta raíz, ya que será el que se mostrara al inicio del repositorio)</li>
+</ol>
+<p><strong>Nota: Los archivos markdown son los que utilizaremos para brindar información a los usuarios sobre lo que se encontrara en nuestro repositorio y así puedan saber de manera rápida lo que encontraran dentro de él o bien, como hacer uso de lo que descargaran o como lo descargarán)</strong></p>
+<p>Dentro del archivo <strong>readme.md</strong> escribiremos lo siguiente:
+<img src="@attachment/Clipboard_2022-04-27-23-42-14.png" alt=""></p>
+<ol start="3">
+<li>
+<p>Da clic en terminal y selecciona una terminal <strong>git bash</strong>
+<img src="@attachment/Clipboard_2022-04-27-23-36-36.png" alt=""></p>
+</li>
+<li>
+<p>Escribe *<em>git init</em> esto nos permitira nicializar el directorio como repositorio de git
+<img src="@attachment/Clipboard_2022-04-27-23-46-13.png" alt=""></p>
+</li>
+<li>
+<p>En el repositorio creado encontrarás diversos comandos, copia y pega en tu terminal el primer comando
+<img src="@attachment/Clipboard_2022-04-27-23-47-06.png" alt=""></p>
+</li>
+<li>
+<p>Escribe <strong>git add .</strong> Esto permitirá agregar todos tus archivos al repositorio
+<img src="@attachment/Clipboard_2022-04-27-23-48-46.png" alt=""></p>
+</li>
+<li>
+<p>Es momento de realizar tu primer commit con <strong>git commit -m &ldquo;descripcion&rdquo;</strong>, los commit servirán como checkpoints en los cuales podrás describir todo lo que realizaste, personalmente te recomiendo hacer un commit por cada paso importante que realices en tu proyecto
+<img src="@attachment/Clipboard_2022-04-27-23-55-20.png" alt=""></p>
+</li>
+<li>
+<p><strong>git remote -v</strong>
+<img src="@attachment/Clipboard_2022-04-27-23-56-57.png" alt=""></p>
+</li>
+<li>
+<p><strong>git push origin master</strong> este comando permitira subir todos tus cambios a la rama master de tu repositorio creado
+<img src="@attachment/Clipboard_2022-04-27-23-57-34.png" alt=""></p>
+</li>
+</ol>
+<h3 id="una-vez-que-hayas-seguido-estos-pasos-tu-repositorio-deberá-de-contar-con-el-archivo-que-quisiste-subir">Una vez que hayas seguido estos pasos, tu repositorio deberá de contar con el archivo que quisiste subir:</h3>
+<h1 id="cuando-hagas-cambios-en-tu-codigo-y-quieras-guardarlos-solamente-bastara-hacer-lo-siguiente">Cuando hagas cambios en tu codigo y quieras guardarlos solamente bastara hacer lo siguiente:</h1>
+<ul>
+<li>git add .</li>
+<li>git commit -m &ldquo;descipcion de lo hecho&rdquo;</li>
+<li>git remote -v</li>
+<li>git push origin master</li>
+</ul>
+<p><strong>Estos comandos son básicos para poder hacer lo que se necesita en un proyecto, pero es recomendable aprender github y no manejarlo como si fuera una receta de cocina, ya que si se llegase a haber algún error, habrá que analizar lo sucedido y arreglarlo con comandos de git</strong></p>
+<h1 id="extra-branch-o-ramas">Extra: Branch o ramas</h1>
+<p>Las branch son ramificaciones que tenemos para poder hacer mucho más estructurado nuestro repositorio, nos encontraremos diferentes branches dependiendo de los proyectos, en el que hemos creado  solo contamos con la rama master
+<img src="@attachment/Clipboard_2022-04-28-00-03-29.png" alt=""></p>
+<p>Pero es importante mencionar que nos podremos encontrar con proyectos en los cuales haya muchas más ramas como por ejemplo:
+<img src="@attachment/Clipboard_2022-04-28-00-05-39.png" alt=""></p>
+<h1 id="clonar-repositorios">Clonar repositorios</h1>
+<p>Para clonar un repositorio (descargarlo en tu computadora) es muy sencillo, solo bastara con hacer <strong>git clone <em>enlace del repo a clonar</em></strong>
+<img src="@attachment/Clipboard_2022-04-28-00-09-17.png" alt=""></p>
+
+    </div>
+  </div>
+
+    <div class="footer">
+  
+  <div class="footer-social">
+    
+      <span class="social-icon social-icon-twitter">
+        <a href="https://twitter.com/Gabriel29A6" title="twitter" target="_blank" rel="noopener">
+          <img src="../../images/social/twitter.svg" width="24" height="24" alt="twitter"/>
+        </a>
+      </span>
+    
+      <span class="social-icon social-icon-github">
+        <a href="https://github.com/GabrielVillagran" title="github" target="_blank" rel="noopener">
+          <img src="../../images/social/github.svg" width="24" height="24" alt="github"/>
+        </a>
+      </span>
+    
+  </div>
+  
+</div>
+  </div>
+
+  
+
+  
+
+  
+  <script type="text/javascript" src="../../js/bundle.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js"></script>
+  
+
+  
+  
+
+  
+  
+  
+    
+      
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-225486122-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-225486122-1');
+      </script>
+    
+  
+
+
+</body>
+</html>

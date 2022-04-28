@@ -6,7 +6,7 @@ modified: '2022-04-28T05:09:43.646Z'
 ---
 
 ---
-title: "Git & GitHub"
+title: "Git & GitHub Tutorial"
 date: 2022-04-28T12:00:21-04:00
 description: 'Tutorial basico para el uso de estas dos herramientas'
 ---

@@ -48,7 +48,7 @@ Dentro del archivo **readme.md** escribiremos lo siguiente:
 
 ![image](https://user-images.githubusercontent.com/44887537/165681561-1d3e31d6-a2ca-48f0-9223-68ed39ddb12d.png)
 
-4. Escribe **git init* esto nos permitira nicializar el directorio como repositorio de git
+4. Escribe **git init** esto nos permitira nicializar el directorio como repositorio de git
 
 ![image](https://user-images.githubusercontent.com/44887537/165681589-99bd00cb-8c5b-4ccc-9866-570e06d92a87.png)
 

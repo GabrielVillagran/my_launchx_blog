@@ -1,6 +1,6 @@
 ---
 title: "Git & GitHub Tutorial"
-date: 2022-04-28T12:00:21-04:00
+date: 2022-04-29T12:00:21-04:00
 description: 'Tutorial basico para el uso de estas dos herramientas'
 ---
 Gabriel Villagrán

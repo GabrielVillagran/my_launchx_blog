@@ -1,12 +1,13 @@
 ---
 title: "Clustering Algorithms (Machine Learning)"
-date: 2022-05-11T12:33:21-06:00
-description: 'A quick introduction about what is clustering in ML'
+date: 2022-05-11
+description: 'A quick introduction about clustering in ML'
 ---
+
 ###### Villagran Saucedo Gabriel Aldair
 ###### 267572
 ###### a267572@alumnos.uaslp.mx
-- - -
+
 # Introdution
 I'm going to talk about clustering and I think that this is a very important term in computing.
 Clustering will be very helpful for the ML algorithms, specially if we have to work with a big dataset, it is important to say that there are different types of clustering methods and algorithms, in this post you will find some of them, and you will get into the clustering in Machine Learning.
@@ -35,7 +36,7 @@ for example group animals by country, group music by artist or groups documents 
 
 There are different types of clustering, but... How we can choose the right one?.
 We have to consider the size of the dataset, because if we choose a larger one the computer time will increase at the square of the number of examples "n", denotated as (O(n^2)) in simple words, this are not practical if we are using a bigger dataset.
----
+
 ### Types of clustering
 - **Centroid-based clustering**
  Organizes the data into non-hierarchical clusters, k-means is the most widely-used centroid-based clustering algorithm, Centroid-based algorithms are efficient but sensitive to initial conditions and outliers.
@@ -56,7 +57,7 @@ We have to consider the size of the dataset, because if we choose a larger one t
  creates a tree of clusters. Hierarchical clustering, not surprisingly, is well suited to hierarchical data, one of the advantages is that any number of clusters can be chosen by cutting the tree at the right level.
  
 ![image](https://user-images.githubusercontent.com/44887537/167773667-1ca4259c-c92f-43f1-a380-00fc325ea5d0.png)
- ---
+ 
 ### Clustering algorithms
 - Density-Based Clustering
 - DBSCAN (Density-Based Spatial Clustering of Applications with Noise)

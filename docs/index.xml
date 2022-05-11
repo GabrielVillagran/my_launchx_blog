@@ -6,7 +6,16 @@
     <description>Recent content in Launch X Bitácora de viaje on Bitácora de Explorer: Gabriel Villagran</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 27 Apr 2022 12:00:21 -0400</lastBuildDate><atom:link href="https://gabrielvillagran.github.io/my_launchx_blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 11 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://gabrielvillagran.github.io/my_launchx_blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Clustering Algorithms (Machine Learning)</title>
+      <link>https://gabrielvillagran.github.io/my_launchx_blog/posts/post7/</link>
+      <pubDate>Wed, 11 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://gabrielvillagran.github.io/my_launchx_blog/posts/post7/</guid>
+      <description>Villagran Saucedo Gabriel Aldair 267572 a267572@alumnos.uaslp.mx Introdution I&amp;rsquo;m going to talk about clustering and I think that this is a very important term in computing. Clustering will be very helpful for the ML algorithms, specially if we have to work with a big dataset, it is important to say that there are different types of clustering methods and algorithms, in this post you will find some of them, and you will get into the clustering in Machine Learning.</description>
+    </item>
+    
     <item>
       <title>Git &amp; GitHub Tutorial</title>
       <link>https://gabrielvillagran.github.io/my_launchx_blog/posts/post6/</link>

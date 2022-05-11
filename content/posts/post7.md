@@ -1,6 +1,6 @@
 ---
 title: "Clustering Algorithms (Machine Learning)"
-date: 2022-05-11T12:25:21
+date: 2022-05-11T12:33:21-06:00
 description: 'A quick introduction about what is clustering in ML'
 ---
 ###### Villagran Saucedo Gabriel Aldair

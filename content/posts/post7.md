@@ -12,7 +12,9 @@ I'm going to talk about clustering and I think that this is a very important ter
 Clustering will be very helpful for the ML algorithms, specially if we have to work with a big dataset, it is important to say that there are different types of clustering methods and algorithms, in this post you will find some of them, and you will get into the clustering in Machine Learning.
 # What is Clustering?
 first of all, what is clustering?, in simple words this kind of algorithm will help us to learn something using a lot of cases, this cases will be divided in groups and we will not only have one group, we can have so many different groups and once we have this groups we can learn something, for instance a new genre of music.
+
 I would like to quote this example by google:
+
 > In machine learning, we often group examples as a first step to understand a subject (data set) in a machine learning system. Grouping unlabeled examples is called clustering.
 As the examples are unlabeled, clustering relies on unsupervised machine learning. If the examples are labeled, then clustering becomes classification. 
 

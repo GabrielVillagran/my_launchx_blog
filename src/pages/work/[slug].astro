@@ -21,7 +21,7 @@ const { position } = Astro.props;
   <div class="content-layout">
     <div class="prose">
       <h2>My role</h2>
-      <p>{position.overview}</p>
+      {position.overview.map((paragraph) => <p>{paragraph}</p>)}
       <h2>What I worked on</h2>
       <ul>{position.highlights.map((highlight) => <li>{highlight}</li>)}</ul>
       <div class="article-footer"><a class="text-link" href={urlFor('work/')}>← All experience</a></div>

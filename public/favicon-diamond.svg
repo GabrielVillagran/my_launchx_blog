@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Gabriel Villagrán — diamond rune-inspired mark</title>
+  <rect width="64" height="64" fill="#050607"/>
+  <path d="M32 8 56 32 32 56 8 32Z" fill="none" stroke="#f1f3f2" stroke-width="4" stroke-linejoin="miter"/>
+</svg>

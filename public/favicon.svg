@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <title>Gabriel Villagrán — G rune mark</title>
-  <rect width="64" height="64" rx="11" fill="#1c2527"/>
-  <path d="M14 12 50 52M50 12 14 52" fill="none" stroke="#d6a86e" stroke-width="6" stroke-linecap="square"/>
-  <path d="M8 8h9M47 8h9M8 56h9M47 56h9" fill="none" stroke="#d6a86e" stroke-width="1.5" opacity=".65"/>
-</svg>

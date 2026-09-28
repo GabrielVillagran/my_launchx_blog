@@ -42,7 +42,7 @@ Si revisas un artículo ya publicado, conserva su fecha `published` y añade o a
 
 ## Actualizar la experiencia profesional
 
-Edita `src/lib/experience.ts`. Cada puesto contiene `company`, `role`, `period`, `location`, `summary`, `overview`, `highlights` y `tags`. `summary` aparece en la portada y en Work; `overview` y `highlights` aparecen en el detalle del puesto. Para agregar otro empleo, copia un objeto, cambia `number` y dale un `slug` único: su página `/work/slug/` se genera automáticamente.
+Edita `src/lib/experience.ts`. Cada puesto contiene `company`, `role`, `period`, `location`, `summary`, `overview`, `highlights` y `tags`. `summary` aparece en la portada y en Work; `overview` es una lista de párrafos y, junto con `highlights`, aparece en el detalle del puesto. Para agregar otro empleo, copia un objeto, cambia `number` y dale un `slug` único: su página `/work/slug/` se genera automáticamente.
 
 Los textos actuales de Cincinnati AI, Walmart Global Tech y Transom se actualizaron con la información que proporcionaste. Comprueba los detalles que quieras publicar antes de seguir ampliándolos.
 
@@ -60,9 +60,10 @@ Edita `src/lib/projects.ts`. Cada proyecto tiene `name`, `status`, `type`, `desc
 | Textos y progreso de proyectos | `src/lib/projects.ts` |
 | Colores, tipografía, tamaños y vista móvil | `src/styles.css` |
 | Navegación, pie y metadatos | `src/layouts/BaseLayout.astro` |
-| Ícono del navegador, basado en la runa ᚷ | `public/favicon.svg` |
+| Foto de la portada | `public/images/gabriel-profile.webp` |
+| Ícono de rombo inspirado en tu imagen | `public/favicon-diamond.svg` |
 
-Los colores principales están definidos al final de `src/styles.css` en las variables `:root`. El símbolo se dibuja como SVG para que se vea incluso cuando el dispositivo no tenga fuentes rúnicas.
+Los colores de la versión oscura están definidos al final de `src/styles.css` en las variables `:root`. La marca se dibuja como SVG y reproduce la forma de rombo de la referencia. Para cambiar la foto, sustituye el archivo conservando su nombre; la portada la recorta con CSS. La copia publicada está optimizada en WebP.
 
 ## Subir y desplegar
 

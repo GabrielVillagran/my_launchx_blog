@@ -1,59 +1,83 @@
-# Gabriel Villagrán — portfolio and blog
+# Gabriel Villagrán — portfolio y blog
 
-A static portfolio and technical blog built with **Astro** and **React**. Astro generates fast, individually addressable pages for each Markdown article. React powers the search and category filters on the writing page. No backend, database, paid service, or API key is required.
+Sitio estático hecho con **Astro** y **React**, publicado gratis en [GitHub Pages](https://gabrielvillagran.github.io/my_launchx_blog/). Astro genera las páginas; React se usa en la búsqueda y los filtros de artículos. Los siete textos de LaunchX conservan su fecha original de 2022 y muestran por separado la fecha de revisión.
 
-The seven LaunchX articles keep their original 2022 publication dates. Each revised article separately identifies its 2026 revision. The professional experience on the home and Work pages is based on Gabriel's résumé and should be kept accurate as his career evolves.
+El diseño toma como referencia la composición de la [plantilla compartida](https://steady-fudge-0fb909.netlify.app/): presentación, publicaciones y trabajo destacado. La identidad visual, el símbolo rúnico, el contenido y la sección de proyectos son propios. Los antiguos enlaces `/posts/.../` y `/pages/about/` siguen redirigiendo a las páginas actuales.
 
-If this project replaces the old LaunchX repository, static redirect pages retain the old `/posts/post2/` through `/posts/post7/`, `/posts/intro/`, `/posts/`, and `/pages/about/` links. A different repository URL cannot preserve links from the old domain path.
+## Ver los cambios en tu computadora
 
-## Run locally
-
-Requires Node.js 24 or later and npm.
+Instala Node.js 24 o posterior y ejecuta:
 
 ```bash
 npm ci
 npm run dev
 ```
 
-Open the local URL printed by Astro. Before publishing:
+Abre la dirección local que muestre Astro. Antes de subir cambios ejecuta `npm run check` y `npm run build`. La configuración del repositorio calcula automáticamente la ruta `/my_launchx_blog/` al publicar.
+
+## Publicar un nuevo post
+
+1. Crea un archivo Markdown en `src/content/posts/`, por ejemplo `my-new-post.md`.
+2. Agrega los datos del encabezado y después escribe el contenido en Markdown:
+
+   ```md
+   ---
+   title: "What I learned building an API"
+   description: "A short summary shown in the article list."
+   published: 2026-10-01
+   category: "Backend"
+   readingMinutes: 6
+   ---
+
+   Your introduction goes here.
+
+   ## The first lesson
+
+   Your article continues here.
+   ```
+
+3. El nombre del archivo forma la URL: `my-new-post.md` → `/blog/my-new-post/`. Los posts se ordenan por `published`; la portada muestra automáticamente los tres más recientes.
+
+Si revisas un artículo ya publicado, conserva su fecha `published` y añade o actualiza `revised: AAAA-MM-DD`. Evita cambiar el nombre del archivo si quieres conservar su enlace. Para cambiar la búsqueda o filtros, edita `src/components/PostSearch.tsx`.
+
+## Actualizar la experiencia profesional
+
+Edita `src/lib/experience.ts`. Cada puesto contiene `company`, `role`, `period`, `location`, `summary`, `overview`, `highlights` y `tags`. `summary` aparece en la portada y en Work; `overview` y `highlights` aparecen en el detalle del puesto. Para agregar otro empleo, copia un objeto, cambia `number` y dale un `slug` único: su página `/work/slug/` se genera automáticamente.
+
+Los textos actuales de Cincinnati AI, Walmart Global Tech y Transom se actualizaron con la información que proporcionaste. Comprueba los detalles que quieras publicar antes de seguir ampliándolos.
+
+## Agregar o actualizar proyectos personales
+
+Edita `src/lib/projects.ts`. Cada proyecto tiene `name`, `status`, `type`, `description`, `next` y `tags`. Se muestra en la portada y en `/projects/`. El juego **Battleship on Paper** está marcado como *Under construction*: la descripción separa la idea del menú del siguiente trabajo de colocación de barcos y combate. Cuando tengas un demo o repositorio público, podrás agregar un enlace a la tarjeta y a la página de proyectos.
+
+## Corregir textos o cambiar el diseño
+
+| Qué quieres cambiar | Archivo |
+| --- | --- |
+| Presentación y secciones de la portada | `src/pages/index.astro` |
+| Texto de About y agradecimientos | `src/pages/about.astro` |
+| Introducción de Work | `src/pages/work.astro` |
+| Textos y progreso de proyectos | `src/lib/projects.ts` |
+| Colores, tipografía, tamaños y vista móvil | `src/styles.css` |
+| Navegación, pie y metadatos | `src/layouts/BaseLayout.astro` |
+| Ícono del navegador, basado en la runa ᚷ | `public/favicon.svg` |
+
+Los colores principales están definidos al final de `src/styles.css` en las variables `:root`. El símbolo se dibuja como SVG para que se vea incluso cuando el dispositivo no tenga fuentes rúnicas.
+
+## Subir y desplegar
+
+Este repositorio publica automáticamente después de integrar cambios en `master`. Flujo sugerido:
 
 ```bash
-npm run check
-npm run build
-npm run preview
-```
-
-## Publish on GitHub Pages for free
-
-1. Create a **public** GitHub repository. You can name it `gabriel-portfolio`, replace the old `my_launchx_blog` repository, or use `GabrielVillagran.github.io` for a root-domain site. Push this project's files to `main` or `master`. The workflow calculates the correct site path from the repository name.
-2. In **Settings → Pages → Build and deployment**, select **GitHub Actions** as the source.
-3. In **Actions**, wait for **Deploy portfolio to GitHub Pages** to finish. The deployed URL appears in the deployment and in **Settings → Pages**. Future pushes to the branch you chose redeploy automatically.
-
-For a new repository created from a local folder, one possible sequence is:
-
-```bash
-git init
-git branch -M main
+git switch master
+git pull origin master
+git switch -c update-my-blog
+# Edita los archivos y verifica con npm run check && npm run build
 git add .
-git commit -m "Create portfolio and blog"
-git remote add origin https://github.com/GabrielVillagran/YOUR_REPOSITORY.git
-git push -u origin main
+git commit -m "Update portfolio content"
+git push -u origin update-my-blog
 ```
 
-Use the repository URL GitHub gives you. If you publish over the existing LaunchX repository, make a branch in a fresh clone, remove its old Hugo source, generated `docs/` directory, and `.github/workflows/build_launchx_blog.yml`, then copy this project's files into the clone. Review the diff, commit, and merge normally. Do not force-push over the LaunchX history. The new workflow also runs on the old repository's `master` branch.
+Abre un Pull Request de `update-my-blog` a `master` en GitHub y haz **Merge**. La acción `.github/workflows/deploy.yml` compila y publica el sitio en la misma URL. Consulta la pestaña **Actions** y espera a que **Deploy portfolio to GitHub Pages** termine correctamente; después recarga la página. No necesitas pagar hosting ni subir la carpeta `dist/`.
 
-## Edit content
-
-- Home, About, Work, and Writing pages: `src/pages/`
-- Role descriptions, dates, and highlights: `src/lib/experience.ts`
-- Blog articles and original dates: `src/content/posts/*.md`
-- Theme and responsive design: `src/styles.css`
-- Metadata and navigation: `src/layouts/BaseLayout.astro`
-
-To add an article, create a `.md` file in `src/content/posts/` with `title`, `description`, `published`, `category`, and `readingMinutes` in its frontmatter. Add `revised` only when you later change a previously published article substantially. Its filename becomes its URL slug.
-
-The site deliberately avoids an invented contact address or links to unpublished code. Update the public work and contact options as you release them. Keep professional or client details within the bounds you are allowed to share.
-
-## Deployment notes
-
-The GitHub Actions workflow builds only published Markdown files; it does not use the former Hugo `-D` drafts flag or commit generated output into the source branch. The site uses a repository-aware base path, so assets and internal navigation work under both a project URL (`/repo/`) and a user site (`/`).
+El sitio es público: no incluyas teléfonos, correos privados ni detalles de clientes que no quieras compartir.

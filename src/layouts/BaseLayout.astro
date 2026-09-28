@@ -13,10 +13,12 @@ interface Props {
 const { title, description, pageType = 'website', published, revised } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site).toString();
 const fullTitle = title === 'Home' ? 'Gabriel Villagrán | Software Engineer' : `${title} | Gabriel Villagrán`;
+const currentPath = Astro.url.pathname;
 const nav = [
   { name: 'Home', href: urlFor('') },
   { name: 'Work', href: urlFor('work/') },
   { name: 'Writing', href: urlFor('blog/') },
+  { name: 'Projects', href: urlFor('projects/') },
   { name: 'About', href: urlFor('about/') },
 ];
 ---
@@ -25,7 +27,7 @@ const nav = [
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#0d1b29" />
+    <meta name="theme-color" content="#1c2527" />
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
     <link rel="icon" href={urlFor('favicon.svg')} type="image/svg+xml" />
@@ -43,12 +45,12 @@ const nav = [
     <div class="site-shell">
       <header class="site-header">
         <a class="brand" href={urlFor('')} aria-label="Gabriel Villagrán, home">
-          <span class="brand-symbol" aria-hidden="true">G<span>.</span></span>
-          <span>Gabriel Villagrán</span>
+          <span class="brand-symbol" aria-hidden="true"><svg viewBox="0 0 64 64" focusable="false"><path d="M14 12 50 52M50 12 14 52" /></svg></span>
+          <span>Gabriel <b>Villagrán</b></span>
         </a>
         <nav class="site-nav" aria-label="Main navigation">
           {nav.map((item) => (
-            <a href={item.href} aria-current={Astro.url.pathname === new URL(item.href, Astro.site).pathname ? 'page' : undefined}>{item.name}</a>
+            <a href={item.href} aria-current={item.name === 'Home' ? (currentPath === item.href ? 'page' : undefined) : (currentPath.startsWith(item.href) ? 'page' : undefined)}>{item.name}</a>
           ))}
         </nav>
         <a class="header-github" href="https://github.com/GabrielVillagran" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
@@ -57,10 +59,11 @@ const nav = [
       <footer class="site-footer">
         <div>
           <strong>Gabriel Villagrán</strong>
-          <span>Software engineering, writing, and the work in progress.</span>
+          <span>Software engineering, writing, and work in progress.</span>
         </div>
         <div class="footer-links">
           <a href={urlFor('blog/')}>Writing</a>
+          <a href={urlFor('projects/')}>Projects</a>
           <a href="https://github.com/GabrielVillagran" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
           <a href={urlFor('about/')}>About</a>
         </div>

@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { experience } from '../../lib/experience';
+import { urlFor } from '../../lib/site';
+
+export function getStaticPaths() {
+  return experience.map((position) => ({ params: { slug: position.slug }, props: { position } }));
+}
+
+type Position = (typeof experience)[number];
+interface Props { position: Position }
+const { position } = Astro.props;
+---
+<BaseLayout title={`${position.role} at ${position.company}`} description={position.summary}>
+  <header class="article-head">
+    <a class="eyebrow" href={urlFor('work/')}>Experience / {position.company}</a>
+    <h1>{position.role}</h1>
+    <p>{position.summary}</p>
+    <div class="article-meta"><span>{position.company}</span><span>{position.period}</span><span>{position.location}</span></div>
+  </header>
+  <div class="content-layout">
+    <div class="prose">
+      <h2>My role</h2>
+      <p>{position.overview}</p>
+      <h2>What I worked on</h2>
+      <ul>{position.highlights.map((highlight) => <li>{highlight}</li>)}</ul>
+      <div class="article-footer"><a class="text-link" href={urlFor('work/')}>← All experience</a></div>
+    </div>
+    <aside><strong>Tools & technologies</strong><div class="card-tags">{position.tags.map((tag) => <span>{tag}</span>)}</div></aside>
+  </div>
+</BaseLayout>

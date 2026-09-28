@@ -1,14 +1,17 @@
 ---
-import type { projects } from '../lib/projects';
-type Project = (typeof projects)[number];
-interface Props { project: Project }
-const { project } = Astro.props;
+import type { experience } from '../lib/experience';
+import { urlFor } from '../lib/site';
+type Position = (typeof experience)[number];
+interface Props { position: Position }
+const { position } = Astro.props;
 ---
 <article class="work-card">
-  <div class="card-top"><span>{project.category}</span><span>{project.number}</span></div>
+  <div class="card-top"><span>{position.period}</span><span>{position.number}</span></div>
   <div>
-    <h3>{project.title}</h3>
-    <p>{project.description}</p>
-    <div class="card-tags">{project.tags.map((tag) => <span>{tag}</span>)}</div>
+    <span class="card-company">{position.company}</span>
+    <h3><a href={urlFor(`work/${position.slug}/`)}>{position.role}</a></h3>
+    <p>{position.summary}</p>
+    <div class="card-tags">{position.tags.slice(0, 3).map((tag) => <span>{tag}</span>)}</div>
+    <span class="card-cta" aria-hidden="true">Read about this role ↗</span>
   </div>
 </article>

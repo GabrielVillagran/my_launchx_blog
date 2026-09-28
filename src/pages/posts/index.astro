@@ -1,0 +1,6 @@
+---
+import { urlFor } from '../../lib/site';
+const destination = urlFor('blog/');
+---
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8" /><meta name="robots" content="noindex" /><meta http-equiv="refresh" content={`0; url=${destination}`} /><link rel="canonical" href={new URL(destination, Astro.site).toString()} /><title>Writing moved</title></head><body><p>Writing has moved. <a href={destination}>Open the article archive.</a></p></body></html>

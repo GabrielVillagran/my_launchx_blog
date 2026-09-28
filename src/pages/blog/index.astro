@@ -1,0 +1,20 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PostSearch from '../../components/PostSearch';
+import { getCollection } from 'astro:content';
+import { urlFor, publicationDate } from '../../lib/site';
+
+const posts = (await getCollection('posts')).sort((a, b) => b.data.published.getTime() - a.data.published.getTime());
+const summaries = posts.map((post) => ({
+  title: post.data.title,
+  description: post.data.description,
+  date: publicationDate(post.data.published),
+  category: post.data.category,
+  readingMinutes: post.data.readingMinutes,
+  href: urlFor(`blog/${post.id}/`),
+}));
+---
+<BaseLayout title="Writing" description="Technical articles and a revised archive of Gabriel Villagrán's original LaunchX posts from 2022.">
+  <header class="page-heading"><span class="eyebrow">Technical writing</span><h1>Writing.</h1><p>Notes on software engineering, development tools, and earlier learning. The LaunchX articles retain their 2022 publication dates and clearly note their later revisions.</p></header>
+  <PostSearch posts={summaries} client:load />
+</BaseLayout>

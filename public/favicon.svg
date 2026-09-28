@@ -1,5 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#0d1b29"/>
-  <path d="M45 29H30v7h8c-1 5-5 8-11 8-8 0-13-6-13-13s5-13 13-13c5 0 9 2 12 6l6-5c-4-6-10-9-18-9C14 10 6 19 6 31s8 21 21 21c12 0 20-8 20-20v-3Z" fill="#f5f7f6"/>
-  <circle cx="52" cy="47" r="5" fill="#b4ee67"/>
+  <title>Gabriel Villagrán — G rune mark</title>
+  <rect width="64" height="64" rx="11" fill="#1c2527"/>
+  <path d="M14 12 50 52M50 12 14 52" fill="none" stroke="#d6a86e" stroke-width="6" stroke-linecap="square"/>
+  <path d="M8 8h9M47 8h9M8 56h9M47 56h9" fill="none" stroke="#d6a86e" stroke-width="1.5" opacity=".65"/>
 </svg>

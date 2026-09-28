@@ -6,7 +6,7 @@ import { projects } from '../lib/projects';
   <header class="page-heading"><span class="eyebrow">The workshop</span><h1>Personal projects.</h1><p>Experiments where I get to explore new ideas and build at my own pace. I’ll add demos and source links as each project becomes ready to share.</p></header>
   <div class="project-list">
     {projects.map((project, index) => <article class="project-feature">
-      <div class="project-art" aria-hidden="true"><span class="project-grid"></span><span class="project-cross">×</span><span class="project-coordinate">0{index + 1} / WIP</span></div>
+      <div class="project-art" aria-label="Project image coming soon"><span class="project-grid" aria-hidden="true"></span><span class="project-cross" aria-hidden="true">◇</span><span class="project-coordinate">0{index + 1} / IMAGE COMING SOON</span></div>
       <div class="project-copy"><span class="eyebrow">{project.type}</span><h2>{project.name}</h2><span class="status-pill">{project.status}</span><p>{project.description}</p><p class="project-next">{project.next}</p><div class="card-tags">{project.tags.map((tag) => <span>{tag}</span>)}</div></div>
     </article>)}
   </div>

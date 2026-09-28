@@ -6,8 +6,11 @@ export const experience = [
     role: 'Software Engineer · Backend Integrations',
     period: 'Nov 2024 – Present',
     location: 'Atlanta, Georgia',
-    summary: 'Backend integrations with Laravel, Docker-based services, RAG workflows, and client-facing experiences across web and iOS.',
-    overview: 'I build the integration layer between client applications and backend services, and contribute to web and iOS features that use those APIs.',
+    summary: 'I connect Laravel, React, and iOS clients to backend services, with work spanning REST APIs, internal RAG workflows, and the tools teams use to validate them.',
+    overview: [
+      'At Cincinnati AI, I work on the connections between client applications and the services that power them. I have built PHP and Laravel facade services, REST endpoints for workspace, channel, and message workflows, and reusable API clients so web and iOS features can communicate with Docker-based services through a clear integration layer. I have also contributed to internal RAG workflows that retrieve documents and provide contextual data for AI-assisted product features.',
+      'The role extends beyond the API boundary. I built a lightweight Laravel Breeze interface to exercise chat features, contributed to React and Swift client experiences, and integrated tools such as Firebase, Core Data, and MapKit where those workflows needed authentication, persistence, or location. I spend time validating requests with Postman and cURL, debugging across layers, improving responsiveness, and writing tests and documentation. I also mentor junior developers on the same tools and patterns we use in day-to-day work.',
+    ],
     highlights: [
       'Developed backend integration workflows using PHP and Laravel, including facade services that abstract communication between client applications and Docker-based microservices.',
       'Implemented RESTful API endpoints for workspace, channel, and message workflows, enabling integration with Laravel web clients, React interfaces, and iOS applications.',
@@ -31,8 +34,11 @@ export const experience = [
     role: 'Senior iOS Developer · Cart & Checkout Team',
     period: 'Aug 2025 – Apr 2026',
     location: 'Sunnyvale, California',
-    summary: 'iOS cart and checkout features, GraphQL integrations, accessibility improvements, and production reliability for a high-traffic commerce app.',
-    overview: 'On the Cart & Checkout team, I built and maintained customer-facing iOS experiences and helped stabilize critical purchase flows through cross-team validation and production debugging.',
+    summary: 'I built iOS cart and checkout features in a high-traffic commerce app, with a focus on GraphQL integration, accessible behavior, and reliable releases.',
+    overview: [
+      'On Walmart Global Tech’s Cart & Checkout team, I worked on iOS features that customers depend on during a purchase. I extended GraphQL fragments for new mobile capabilities, used CCM feature flags to control Sam’s Club U.S. behavior by tenant, and supported a beta fulfillment experience from implementation through validation and release stabilization. That work required coordinating changes across pull requests and teams while keeping existing checkout behavior dependable.',
+      'I also investigated production issues that were visible to customers, including date handling, address validation, images, analytics payloads, fulfillment logic, and error messages. Accessibility was part of the work: I helped improve VoiceOver and focus behavior across loading states, grouped content, filters, bottom sheets, and other cart and checkout components. I used MVVM-C, delegation, protocols, and reusable UI patterns to keep the code maintainable as product flows changed.',
+    ],
     highlights: [
       'Built and maintained API-driven iOS features for cart and checkout flows in a high-traffic e-commerce application.',
       'Improved critical purchase flows by enhancing checkout consistency, user-facing behavior, release readiness, and production reliability.',
@@ -54,8 +60,11 @@ export const experience = [
     role: 'Software / IoT Engineer',
     period: 'Jun 2022 – Oct 2024',
     location: 'San Luis Potosí, Mexico',
-    summary: 'Real-time SCADA dashboards for airport infrastructure, SQL-backed monitoring, and PLC-integrated industrial systems.',
-    overview: 'At Transom, I developed monitoring and data systems for airport infrastructure and industrial operations, alongside modernization of legacy applications.',
+    summary: 'I designed SCADA dashboards for airport infrastructure and built SQL-backed and PLC-integrated monitoring systems that made operational data easier to use.',
+    overview: [
+      'At Transom, I worked on software that helps people understand what is happening in physical systems. I designed and deployed real-time SCADA dashboards and data models for infrastructure at SFO and LaGuardia, handling more than 300,000 BACnet and OPC field signals. I connected SQL Server with monitoring platforms so operations teams could use alarms, historical data, and reports to investigate conditions and support predictive maintenance.',
+      'I also worked closer to the production floor: I refactored legacy C and Visual Basic systems and developed a monitoring solution integrated with Siemens PLCs. Those changes improved maintainability and made production timing and throughput easier to observe. The work taught me to connect software decisions with the needs of the people who rely on the system in real time.',
+    ],
     highlights: [
       'Designed and deployed real-time SCADA dashboards and data models for SFO and LaGuardia airport infrastructure, processing 300,000+ BACnet and OPC field signals.',
       'Integrated SQL Server with monitoring platforms to support operational reporting, alarms, historical analysis, and predictive maintenance workflows.',

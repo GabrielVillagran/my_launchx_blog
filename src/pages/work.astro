@@ -1,11 +1,12 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { projects } from '../lib/projects';
+import { experience } from '../lib/experience';
+import { urlFor } from '../lib/site';
 ---
-<BaseLayout title="Work" description="Selected professional experience and independent software projects by Gabriel Villagrán.">
-  <header class="page-heading"><span class="eyebrow">Selected work</span><h1>Projects & practice.</h1><p>A mix of professional experience, academic research, and projects I’m building to keep learning. Each entry states its current scope.</p></header>
-  {projects.map((project) => <section class="intro-panel section" aria-labelledby={`project-${project.number}`}>
-    <div><span class="eyebrow">{project.number} / {project.category}</span><h2 id={`project-${project.number}`}>{project.title}</h2></div>
-    <div><p>{project.detail}</p><div class="card-tags" style="margin: 1.5rem 0">{project.tags.map((tag) => <span>{tag}</span>)}</div><p style="font-size: .88rem">{project.note}</p>{'href' in project && project.href && <a class="text-link" href={project.href} target="_blank" rel="noopener noreferrer">View repository ↗</a>}</div>
+<BaseLayout title="Experience" description="Gabriel Villagrán's professional experience in software engineering, iOS development, and industrial systems.">
+  <header class="page-heading"><span class="eyebrow">Professional experience</span><h1>Work, in context.</h1><p>From industrial monitoring to mobile commerce and API-driven products, here is what I contributed in each role.</p></header>
+  {experience.map((position) => <section class="intro-panel section" aria-labelledby={`position-${position.number}`}>
+    <div><span class="eyebrow">{position.period} · {position.location}</span><h2 id={`position-${position.number}`}>{position.company}</h2><p class="position-role">{position.role}</p></div>
+    <div><p>{position.summary}</p><div class="card-tags" style="margin: 1.5rem 0">{position.tags.map((tag) => <span>{tag}</span>)}</div><a class="text-link" href={urlFor(`work/${position.slug}/`)}>Read about this role <span aria-hidden="true">↗</span></a></div>
   </section>)}
 </BaseLayout>

@@ -55,6 +55,11 @@ button, input { font: inherit; }
 .work-card:hover { transform: translateY(-3px); background: #dae8ef; }
 .card-top { display: flex; justify-content: space-between; gap: 1rem; color: var(--muted); font-size: .72rem; font-weight: 800; text-transform: uppercase; letter-spacing: .12em; }
 .work-card h3 { font-size: clamp(1.65rem, 2.6vw, 2.5rem); letter-spacing: -.055em; line-height: 1.1; margin: 0 0 .9rem; }
+.work-card h3 a::after { content: ''; position: absolute; inset: 0; }
+.work-card { position: relative; }
+.work-card:focus-within { outline: 3px solid var(--blue); outline-offset: 4px; }
+.card-company { display: block; font-size: .9rem; font-weight: 750; margin-bottom: .5rem; color: var(--blue); }
+.card-cta { display: inline-block; font-size: .84rem; font-weight: 750; color: var(--blue); margin-top: 1.5rem; }
 .work-card p { color: #435464; margin: 0 0 1.5rem; max-width: 31ch; }
 .card-tags { display: flex; flex-wrap: wrap; gap: .45rem; }
 .card-tags span { font-size: .74rem; font-weight: 700; padding: .25rem .5rem; border: 1px solid #bdcbd0; border-radius: 99px; }
@@ -102,6 +107,7 @@ button, input { font: inherit; }
 .intro-panel { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; padding: 4rem 0; }
 .intro-panel h2 { font-size: clamp(2rem, 3vw, 3.2rem); line-height: 1.12; letter-spacing: -.04em; margin: 0; }
 .intro-panel p { margin: 0 0 1rem; color: var(--muted); }
+.intro-panel .position-role { color: var(--ink); font-weight: 700; margin-top: .8rem; }
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; padding-bottom: 5rem; }
   .hero-aside { max-width: 600px; }

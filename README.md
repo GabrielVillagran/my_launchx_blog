@@ -2,7 +2,7 @@
 
 A static portfolio and technical blog built with **Astro** and **React**. Astro generates fast, individually addressable pages for each Markdown article. React powers the search and category filters on the writing page. No backend, database, paid service, or API key is required.
 
-The seven LaunchX articles keep their original 2022 publication dates. Each revised article separately identifies its 2026 revision. The writing and project descriptions should be kept accurate as the work evolves.
+The seven LaunchX articles keep their original 2022 publication dates. Each revised article separately identifies its 2026 revision. The professional experience on the home and Work pages is based on Gabriel's résumé and should be kept accurate as his career evolves.
 
 If this project replaces the old LaunchX repository, static redirect pages retain the old `/posts/post2/` through `/posts/post7/`, `/posts/intro/`, `/posts/`, and `/pages/about/` links. A different repository URL cannot preserve links from the old domain path.
 
@@ -45,7 +45,7 @@ Use the repository URL GitHub gives you. If you publish over the existing Launch
 ## Edit content
 
 - Home, About, Work, and Writing pages: `src/pages/`
-- Project descriptions and status: `src/lib/projects.ts`
+- Role descriptions, dates, and highlights: `src/lib/experience.ts`
 - Blog articles and original dates: `src/content/posts/*.md`
 - Theme and responsive design: `src/styles.css`
 - Metadata and navigation: `src/layouts/BaseLayout.astro`

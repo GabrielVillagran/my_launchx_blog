@@ -1,0 +1,6 @@
+---
+import { urlFor } from '../../lib/site';
+const destination = urlFor('about/');
+---
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8" /><meta name="robots" content="noindex" /><meta http-equiv="refresh" content={`0; url=${destination}`} /><link rel="canonical" href={new URL(destination, Astro.site).toString()} /><title>About page moved</title></head><body><p>The About page has moved. <a href={destination}>Open the current page.</a></p></body></html>

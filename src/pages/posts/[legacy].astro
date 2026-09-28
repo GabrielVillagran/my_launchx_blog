@@ -1,0 +1,20 @@
+---
+import { urlFor } from '../../lib/site';
+
+export function getStaticPaths() {
+  const routes: Record<string, string> = {
+    intro: 'culture-in-software-development',
+    post2: 'git-and-github-foundations',
+    post3: 'ns3-ai',
+    post4: 'unit-testing-with-jest',
+    post5: 'tcp-and-congestion-control',
+    post6: 'git-and-github-tutorial',
+    post7: 'clustering-algorithms',
+  };
+  return Object.entries(routes).map(([legacy, slug]) => ({ params: { legacy }, props: { slug } }));
+}
+const destination = urlFor(`blog/${Astro.props.slug}/`);
+const canonical = new URL(destination, Astro.site).toString();
+---
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8" /><meta name="robots" content="noindex" /><meta http-equiv="refresh" content={`0; url=${destination}`} /><link rel="canonical" href={canonical} /><title>Article moved</title></head><body><p>This article has moved. <a href={destination}>Read it at its new address.</a></p></body></html>

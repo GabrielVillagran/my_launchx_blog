@@ -1,6 +1,6 @@
 # Gabriel Villagrán — portfolio y blog
 
-Sitio estático hecho con **Astro** y **React**, publicado gratis en [GitHub Pages](https://gabrielvillagran.github.io/my_launchx_blog/). Astro genera las páginas; React se usa en la búsqueda y los filtros de artículos. Los siete textos de LaunchX conservan su fecha original de 2022 y muestran por separado la fecha de revisión.
+Sitio estático hecho con **Astro** y **React**, publicado gratis en [GitHub Pages](https://gabrielvillagran.github.io/Gabriel-Portfolio/). Astro genera las páginas; React se usa en la búsqueda y los filtros de artículos. Los siete textos de LaunchX conservan su fecha original de 2022 y muestran por separado la fecha de revisión.
 
 El diseño toma como referencia la composición de la [plantilla compartida](https://steady-fudge-0fb909.netlify.app/): presentación, publicaciones y trabajo destacado. La identidad visual, el símbolo rúnico, el contenido y la sección de proyectos son propios. Los antiguos enlaces `/posts/.../` y `/pages/about/` siguen redirigiendo a las páginas actuales.
 
@@ -13,7 +13,7 @@ npm ci
 npm run dev
 ```
 
-Abre la dirección local que muestre Astro. Antes de subir cambios ejecuta `npm run check` y `npm run build`. La configuración del repositorio calcula automáticamente la ruta `/my_launchx_blog/` al publicar.
+Abre la dirección local que muestre Astro. Antes de subir cambios ejecuta `npm run check` y `npm run build`. La configuración del repositorio calcula automáticamente la ruta `/Gabriel-Portfolio/` al publicar.
 
 ## Publicar un nuevo post
 

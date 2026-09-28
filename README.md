@@ -81,4 +81,6 @@ git push -u origin update-my-blog
 
 Abre un Pull Request de `update-my-blog` a `master` en GitHub y haz **Merge**. La acción `.github/workflows/deploy.yml` compila y publica el sitio en la misma URL. Consulta la pestaña **Actions** y espera a que **Deploy portfolio to GitHub Pages** termine correctamente; después recarga la página. No necesitas pagar hosting ni subir la carpeta `dist/`.
 
+Si clonaste el repositorio antes de que se llamara `Gabriel-Portfolio`, actualiza su remoto una sola vez con `git remote set-url origin https://github.com/GabrielVillagran/Gabriel-Portfolio.git`. Comprueba el cambio con `git remote -v`. Los enlaces anteriores a GitHub Pages deben actualizarse a la URL nueva; GitHub no redirige automáticamente las URL de sitios de proyecto al renombrar un repositorio.
+
 El sitio es público: no incluyas teléfonos, correos privados ni detalles de clientes que no quieras compartir.
